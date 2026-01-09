@@ -1,0 +1,5 @@
+.venv
+chromadb
+chromadb.db
+chroma
+bgtest

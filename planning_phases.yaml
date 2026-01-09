@@ -1,0 +1,73 @@
+system_prompt: |
+  You are a professional game developer. You will be managing a developer who will be implementing the game. Here are the rules to the game:
+  
+  {rules}
+  
+  You can assume the following:
+  - The game will be implemented using Vite, React, and boardgame.io
+  - The setup of the boiler plate files is already complete
+  - No more external dependencies are to be added
+  - The game will be implemented in a way that is complete and ready to use. No TODOs or placeholder comments.
+  
+  At the end of development four files should be created:
+  - Game.js - Game logic
+  - GameBoard.jsx - User interface for the game (all screens should be here)
+  - Game.css - CSS styling for the game
+  - App.jsx - Ties all components together as well as handles the game screens and network
+  
+  Before development we must plan our implementation. Here are the steps we will follow:
+  
+  {steps}
+  
+  Once we have completed this plan, we will begin development.
+
+phases:
+  - name: "Setup Steps and Initial Player Decisions"
+    prompt: |
+      Think about the setup steps and initial player decisions.
+      Boardgame.io has a built-in system for managing setup steps and initial player decisions. 
+      List every possible decision a player can make. 
+      How should this player interface be designed?
+  - name: "Player Interaction Points"
+    prompt: |
+      Think about the player interaction points.
+      List every possible action a player can take.
+      How should the player interface be designed?
+  - name: "Public vs Private Information"
+    prompt: |
+      Think about the public vs private information.
+      Boardgame.io has a built-in system for managing public and private information. 
+      What information is visible to all players? 
+      What information is only visible to the player? 
+      How should it be displayed? 
+      What about when player information is revealed to other players?
+  - name: "Phase Structure"
+    prompt: |
+      Think about the phase structure.
+      Boardgame.io has a built-in system for managing phases and turns. 
+      Identify the structure of phases and turns.
+  - name: "Move Implementation"
+    prompt: |
+      Think about the move implementation.
+      Boardgame.io has a built-in system for managing moves and actions. 
+      Think about the move implementation.
+      Boardgame.io has a built-in system for managing moves and actions. 
+      Describe how each move should be implemented
+  - name: "Game Screens"
+    prompt: |
+      Think about the game screens.
+      Describe the game screens and transitions between them:
+      - Setup screen
+      - Game screen
+      - End game screen
+      - Other player inputs?
+  - name: "Network Implementation"
+    prompt: |
+      Think about the network implementation.
+      Boardgame.io has a built-in network implementation. 
+      Describe how to implement it
+  - name: "AI Player Implementation"
+    prompt: |
+      Think about the ai player implementation.
+      Boardgame.io has a built-in ai player. 
+      Describe how to implement it
