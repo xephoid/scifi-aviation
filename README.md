@@ -47,7 +47,7 @@ Currently I have loaded the code from boardgame.io into chromadb.
 
 To run the abstract planner:
 ```
-py abstract_planner.py --plan_file planning.md --rules_file rules.pdf
+py abstract_planner.py <rules.pdf> <phases.yaml>
 ```
 LLMs tried so far:
 - qwen2.5-coder:7b
