@@ -21,6 +21,9 @@ system_prompt: |
   
   Once we have completed this plan, we will begin development.
 
+promptPrefix: "Write the "
+promptSuffix: " section for the game."
+promptDetails: ". Your response should be exhaustive. Keep in mind the developer will be using React and boardgame.io to implement the game. Do not include plans for other phases. Also, do not include 'Nice to have' features. Only features explaned in the rules."
 phases:
   - name: "Setup Steps and Initial Player Decisions"
     prompt: |
@@ -71,3 +74,6 @@ phases:
       Think about the ai player implementation.
       Boardgame.io has a built-in ai player. 
       Describe how to implement it
+output:
+  type: "file"
+  filename: "planning.md"
